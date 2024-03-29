@@ -1,14 +1,17 @@
 [
     {
         "user_id": "3",
-        "body": "This post is awesome!"
+        "post_id": "3",
+        "content": "This post is awesome!"
     },
     {
         "user_id": "2",
-        "body": "This post is funny!"
+        "post_id": "2",
+        "content": "This post is funny!"
     },
     {
         "user_id": "1",
-        "body": "This post is cool!"
+        "post_id": "1",
+        "content": "This post is cool!"
     }
 ]

@@ -29,13 +29,14 @@ router.put('/:id', withAuth, async (req, res) => {
         returning: true // This option is to return the updated post
       }
     );
+    console.log(updatedPosts);
 
     if (numRowsUpdated === 0) {
       res.status(404).json({ message: 'No post found with this id or unauthorized to update!' });
       return;
     }
 
-    res.json(updatedPosts[1]); // Return the updated post
+    res.json(updatedPosts); // Return the updated post
   } catch (err) {
     res.status(400).json(err);
   }

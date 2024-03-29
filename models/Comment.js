@@ -19,6 +19,14 @@ Comment.init(
                 key: 'id',
             },
         },
+        post_id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            refrence: {
+                model: 'post',
+                key: 'id',
+            }
+        },
         content: {
             type: DataTypes.STRING,
             allowNull: false,
